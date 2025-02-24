@@ -1,0 +1,13 @@
+/* bugSolution.css */
+#container {
+  width: calc(100% - 50px); /* Correct: Consistent units */
+  height: calc((100px + 50px) / 2); /* Correct: Parentheses for clarity */
+  /* Ensure all values within calc() are well-defined and have consistent units */
+}
+
+/* Avoid issues like this:
+#container {
+  width: calc(100% - 50); /* Incorrect: Missing unit for 50 */
+  height: calc(100px + 50px / 2); /* Incorrect: Unclear precedence */
+}
+*/
